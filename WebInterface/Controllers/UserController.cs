@@ -95,20 +95,5 @@ namespace WebInterface.Controllers
             await _userService.DeleteUserAsync(id);
             return RedirectToAction("Index");
         }
-
-        /*
-        public async Task<IActionResult> GetUserCount()
-        {
-            var response = await _httpClient.GetAsync("api/userapi/count");
-
-            if(response.IsSuccessStatusCode)
-            {
-                var count = response.Content.ReadAsStringAsync();
-                return View(count);
-            }
-
-            return View();
-        }
-        */
     }
 }

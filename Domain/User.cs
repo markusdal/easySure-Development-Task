@@ -15,7 +15,7 @@
     public class CreateUserDTO
     {
         public string UserName { get; set; }
-        public List<int> GroupIds { get; set; } // Just group IDs for association
+        public List<int> GroupIds { get; set; } 
     }
 
     public class UpdateUserDTO
